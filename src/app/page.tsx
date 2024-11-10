@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import CounterValue from "./components/CounterValue";
 
 export default function Home() {
   return (
@@ -19,6 +19,12 @@ export default function Home() {
           <Link href="/form">Multi Step Form</Link>
         </li>
       </ul>
+
+      <h1 className="text-center scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
+        Manage State Across the entire App
+      </h1>
+
+      <CounterValue />
     </div>
   );
 }
